@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(152, 127, 94);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(152, 127, 94, 0.63);
+    font-family: Arial, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,14 +19,21 @@ body {
     text-align: center;
     background-color: #f5efe7;
 }
-
 #principal_title {
-    font-size: 40px;
+    display: flex;
+    font-size:xx-large;
+    align-items: center;
+    gap: 15px;
     background-color: transparent;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
-    text-align: center;
     color: #2a2a2a;
+}
+#principal_title img {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 #card_register_project {
@@ -79,7 +86,7 @@ select.input_form {
 }
 
 #btn_add_project {
-    background: linear-gradient(to right, #f5efe7, #8a6d3b);
+    background: linear-gradient(to right, #f5efe7, rgba(152, 127, 94, 0.63));
     color: rgba(49, 49, 49, 0.973);
     padding: 14px;
     border: none;
@@ -93,7 +100,7 @@ select.input_form {
 }
 
 #btn_add_project:hover {
-    background: linear-gradient(to right, #f5efe7, #785c30);
+    background: linear-gradient(to right, #f5efe7, rgba(152, 127, 94, 0.63));
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -136,3 +143,22 @@ select.input_form {
     margin-bottom: 20px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    #card_register_project {
+        margin: 40px 20px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    #card_register_project {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #principal_title {
+        font-size: x-large;
+        justify-content: center;
+    }
+}

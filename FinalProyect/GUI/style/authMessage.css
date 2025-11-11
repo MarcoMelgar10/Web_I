@@ -1,6 +1,3 @@
-/* ============================================
-   MENSAJES DE AUTENTICACIÓN
-   ============================================ */
 
 .auth-message {
     padding: 15px 20px;
@@ -14,16 +11,6 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .auth-message.success {
     background-color: #d4edda;
@@ -52,10 +39,6 @@
     border: 1px solid #ffeeba;
     border-left: 4px solid #ffc107;
 }
-
-/* ============================================
-   CREDENCIALES DE PRUEBA (SOLO DESARROLLO)
-   ============================================ */
 
 .test-credentials {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -119,14 +102,10 @@
     transform: translateY(0);
 }
 
-/* Ocultar en producción */
+
 body.production .test-credentials {
     display: none !important;
 }
-
-/* ============================================
-   INDICADOR DE SESIÓN
-   ============================================ */
 
 .user-session-indicator {
     position: fixed;
@@ -163,10 +142,6 @@ body.production .test-credentials {
     }
 }
 
-/* ============================================
-   LOADING SPINNER
-   ============================================ */
-
 .auth-loading {
     display: none;
     justify-content: center;
@@ -185,9 +160,4 @@ body.production .test-credentials {
     width: 40px;
     height: 40px;
     animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }

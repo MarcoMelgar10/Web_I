@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Contributions - Give a hand</title>
+    <title>Give a hand</title>
     <link rel="stylesheet" href="../../../../style/projectDonateList.css">
 </head>
 <body>
     <header>
         <div id="principal_header">
-            <h1 id="principal_title">Crowdfunding Page</h1>
+            <div id="principal_title" onclick="goToMainPage()">
+                <img src="../../../../../asset/icons/social-justice.png" alt="icon_page">
+                <h1 >
+                        Give a hand
+                </h1>
+           </div>
         </div>
     </header>
 
@@ -17,7 +22,6 @@
         <div id="donations_container">
             <div class="section_header">
                 <h2 class="section_title">List Projects</h2>
-                <p class="section_subtitle">Subheading</p>
             </div>
 
             <div class="donations_list">
@@ -56,9 +60,8 @@
                     </div>
                 </div>
             </div>
-
-            <button id="ok_button">OK</button>
         </div>
     </main>
 </body>
+<script src="../../../../../Js/project/donateProject.js"></script>
 </html>

@@ -1,4 +1,9 @@
  let currentProjectId = null;
+   
+ function goToMainPage() {
+    console.log('Navigating to main page...');
+    window.location.replace("../../../init/main/index.html");
+  }
 
         document.querySelectorAll('.project_card').forEach(card => {
             card.addEventListener('click', function(e) {
@@ -103,3 +108,4 @@
                 closeConfirmModal();
             }
         }
+

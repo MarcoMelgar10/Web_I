@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
   window.changeView = function(view) {
     currentView = view;
     const imageUser = document.getElementById('image_header');
@@ -115,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     switch(view) {
       case 'guest':
-        // Vista invitado: solo login visible
         if (guestBtn) guestBtn.classList.add('active');
         console.log('Vista: Guest');
         break;
@@ -177,3 +177,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.changeView('guest');
 
 });
+
+
+function addFavorite(element){
+  if (element.classList.contains('active')){
+    element.classList.remove('active');
+  }else{
+    element.classList.add('active');
+  }
+
+}

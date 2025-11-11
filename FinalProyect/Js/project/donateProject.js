@@ -5,11 +5,6 @@ slider.addEventListener('input', function() {
     this.style.background = `linear-gradient(to right, #8a6d3b 0%, #8a6d3b ${percentage}%, #ddd ${percentage}%, #ddd 100%)`;
 });
 
-document.querySelector('input[placeholder="1234 5678 9012 3456"]').addEventListener('input', function(e) {
-    let value = e.target.value.replace(/\s/g, '');
-    let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
-    e.target.value = formattedValue;
-});
 
 document.getElementById('paymentForm').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -75,3 +70,9 @@ window.onclick = function(event) {
         closePaymentModal();
     }
 }
+
+
+function goToMainPage() {
+    console.log('Navigating to main page...');
+    window.location.replace("../../../init/main/index.html");
+  }
