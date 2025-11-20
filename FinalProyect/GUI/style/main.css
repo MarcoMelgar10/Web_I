@@ -670,7 +670,6 @@ if will be needed again, just remove the comment marks.
 
 /* Responsive Design */
 
-/* Larger screens */
 @media (min-width: 1200px) {
     #principal_container {
         max-width: 1400px;
@@ -678,7 +677,6 @@ if will be needed again, just remove the comment marks.
     }
 }
 
-/* Tablets and smaller devices (<= 992px) */
 @media (max-width: 992px) {
     #principal_header {
         padding: 1rem 1.5rem;
@@ -719,7 +717,7 @@ if will be needed again, just remove the comment marks.
 
     .item_post {
         margin: 0;
-        max-width: 450px; /* Give a max-width on tablets */
+        max-width: 450px; 
     }
 
     .modal_post .close {
@@ -727,7 +725,7 @@ if will be needed again, just remove the comment marks.
     }
 }
 
-/* Phones (<= 576px) */
+
 @media (max-width: 576px) {
     #principal_header {
         padding: 0.8rem 1rem;
@@ -735,7 +733,7 @@ if will be needed again, just remove the comment marks.
 
     #principal_title {
         font-size: x-large;
-        text-decoration: none; /* Remove underline on small screens */
+        text-decoration: none; 
     }
 
     #principal_title img {
@@ -752,7 +750,7 @@ if will be needed again, just remove the comment marks.
     }
 
     .item_post {
-        max-width: 100%; /* Allow posts to take full width */
+        max-width: 100%; 
     }
 }
 /*finish hidden view*/

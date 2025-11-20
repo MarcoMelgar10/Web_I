@@ -2,7 +2,7 @@
    
  function goToMainPage() {
     console.log('Navigating to main page...');
-    window.location.replace("../../../init/main/index.html");
+    window.location.replace("../../../structure/init/main/index.html");
   }
 
         document.querySelectorAll('.project_card').forEach(card => {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <meta name ="author" content="Marco Antonio" >
+    <meta name="page" content="Sign Up">
+    <link rel="stylesheet" href="../../style/login.css">
+</head>
+
+<body>
+     <header>
+            <div id="principal_header">
+            <div id="principal_title" onclick="goToMainPage()">
+               <img src="../../../asset/icons/social-justice.png" alt="icon_page">
+                <h1 >
+                        Give a hand
+                </h1>
+           </div>
+            </div>
+        </header>
+        <form action="#" method="post" id="form_login">
+                <div id="card_login">
+                    
+                    <h4 class="font_form">Mail</h4>
+                    <input type="text" id="mail" class="input_form" placeholder="Enter your mail">
+                    <h4 class="font_form">Password</h4>
+                    <input type="password" id="password" class="input_form" placeholder="Enter your password">
+                    <input type="button" onclick="showPaymentConfirm()" value="Login" id="btn_login" >
+                   <a href="signUp.html">Sign Up</a>
+                   <a href="main/index.html">Forgot password?</a>
+                </div>
+            </form>
+            <script src="../../../Js/logicLogin.js"></script>
+       </body>
+
+       <div id="confirmModal" class="confirm-modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);">
+        <div class="confirm-content" style="background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); width: 90%; max-width: 400px; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h3 id="confirmTitle" style="color: #2a2a2a; margin-bottom: 15px; font-size: 1.3em;" > Confirm Action</h3>
+            <p id="confirmMessage" style="color: #666; margin-bottom: 25px; line-height: 1.5;">Are you sure you want to proceed?</p>
+            <div style="display: flex; gap: 10px;">
+                <button onclick="closeConfirmModal()" style="flex: 1; padding: 12px; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; background-color: #6c757d; color: white;">No</button>
+                <button id="confirmYesBtn" style="flex: 1; padding: 12px; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; background-color: #4db8a8; color: white;">Yes</button>
+            </div>
+        </div>
+    </div>
+       
+</html>

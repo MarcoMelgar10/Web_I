@@ -187,3 +187,7 @@ function addFavorite(element){
   }
 
 }
+
+function closeConfirmModal() {
+    document.getElementById('confirmModal').style.display = 'none';
+}
